@@ -8,9 +8,59 @@ body {
 
 header {
   background-color: rgb(234, 122, 94);
-  height: 10vh;
+  height: 12vh;
+  width: 100%;
   position: relative;
-  padding: 10px;
+  
+}
+.resistencia{
+  height: 100%;
+  background-color: red;
+  width: 50%;
+  display: inline-block;
+}
+
+
+.logo{
+  height: 100%;
+}
+ .indice{
+  background-color: blue;
+  height: 100%;
+  width:50%;
+  display: inline-block;
+  position: absolute;
+}
+.envio{
+  height: 100%;
+  width: 50%;
+}
+nav{
+  height: 20%;
+  width: 30%;
+  text-align: right;
+}
+a:hover {
+  background-color: rgb(249, 149, 35);
+}
+nav ul li{
+  display: inline-block;
+  border-radius: 2px;
+}
+nav ul li a{
+  padding: 12px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+ul{
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  justify-content: space-between;
 }
 
 main {
@@ -25,69 +75,24 @@ main {
   justify-content: space-between;
   align-items: flex-start;
 }
-/* main {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-} */
+
 h1 {
   color: #c63d2f;
   font-size: 40px;
   text-align: top;
 }
+
 h2 {
   font-size: 30px;
   color: #ff9b50;
   border-bottom: 1px solid #ffbb5c;
 }
 
-section.resistencia {
-  height: 10vh;
-  width: 30vw;
-  display: inline;
-  border: 1vh;
-}
-
-.resistencia {
-  width: 30vw;
-}
-.logo {
-  height: 10vh;
-}
-.envio {
-  height: 10vh;
-  /* margin-left: 115vh; */
-  position: absolute;
-  align-items: center;
-  top: 0;
-  right: 0;
-  left: 12cm;
-}
-
-nav {
-  color: black;
-  text-align: right;
-}
-ul {
-  list-style-type: none;
-}
 footer {
   background-color: blue;
   width: auto;
   height: 10vh;
 }
-
-.inicio {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 2%;
-  list-style-type: none;
-}
-
 .content-mujer {
   display: inline-block;
   position: relative;
@@ -148,7 +153,6 @@ main section nav ul li a {
   background-color: grey;
   float: left;
 }
-
 .lado_izquierdo nav a {
   background-color: grey;
   color: white;
@@ -171,7 +175,6 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
-
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -180,17 +183,14 @@ footer {
   margin: 0 auto;
   padding: 0 20px;
 }
-
 .footer-logo img {
   width: 100px;
   height: auto;
 }
-
 .footer-info {
   flex: 1;
   text-align: left;
 }
-
 .footer-info h3 {
   font-size: 18px;
 }
@@ -226,89 +226,16 @@ footer {
 .footer-social a:hover {
   text-decoration: underline;
 }
-
-.buscar {
-  border-radius: 10px;
-  margin-left: 15vh;
-  margin-top: 4vh;
-  display: flex;
-  align-items: center;
+aside {
+  width: 20%; /* Ancho del aside */
+  margin-left: 20px; /* Margen izquierdo para separar del main */
+  background-color: #f1f1f1;
+  padding: 10px;
 }
-
-.resistencia {
-  width: 29vw;
-}
-
-.logo {
-  height: 10vh;
-}
-
-.envio {
-  height: 10vh;
-  position: absolute;
-  align-items: center;
-  top: 0;
-  right: 0;
-  left: 12cm;
-}
-
-.buscar {
-  text-align: center;
-}
-
-.inicio {
-  position: absolute;
-  top: 0;
-  right: 90px;
-  margin: 2%;
-  list-style-type: none;
-}
-
-/*nav {
-  text-align: right;
-}
-
-ul {
-  text-align: center;
-  text-decoration: none;
-  padding: 20px;
+.nav-link {
   display: block;
-  justify-content: space-between;
+  margin-bottom: 10px;
 }
-*/
-.registro {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 2%;
-  list-style-type: none;
-}
-/*
-nav ul li {
-  display: inline-block;
-  border-radius: 2px;
-}
-nav ul li a {
-  padding: 12px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  border-radius: 10px;
-}
-
-a:hover {
-  background-color: rgb(249, 149, 35);
-}
-/*main {
-  height: 80vh;
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  margin: 0%;
-  padding: 0%;
-  display: inline-block;
-}
-*/
 
 .content-mujer {
   display: inline-block;
@@ -330,18 +257,4 @@ a:hover {
 .tamaño {
   width: 60%;
 }
-/*footer {
-  background-color: rgb(215, 169, 93);
-  width: auto;
-  height: 10vh;
-  */
-aside {
-  width: 20%; /* Ancho del aside */
-  margin-left: 20px; /* Margen izquierdo para separar del main */
-  background-color: #f1f1f1;
-  padding: 10px;
-}
-.nav-link {
-  display: block;
-  margin-bottom: 10px;
-}
+
