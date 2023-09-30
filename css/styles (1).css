@@ -24,7 +24,7 @@ body {
 .logo{
   height: 100%;
 }
- .indice{
+.indice{
   background-color: blue;
   height: 100%;
   width:50%;
@@ -64,16 +64,16 @@ ul{
 }*/
 
 main {
-  position: relative;
+  /* position: relative; */
   width: 85%;
   max-width: 100%;
-  margin: auto;
-  padding: 0%;
-  text-align: center;
+  /* margin: auto; */
+  /* padding: 0%; */
+  /* text-align: center; */
   background-color: #fbeee6;
   float: right;
-  justify-content: space-between;
-  align-items: flex-start;
+  /* justify-content: space-between; */
+  /* align-items: flex-start; */
 }
 
 h1 {
@@ -93,7 +93,7 @@ footer {
   width: auto;
   height: 10vh;
 }
-.content-mujer {
+/* .content-mujer {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
@@ -145,7 +145,7 @@ main section nav ul li {
 main section nav ul li a {
   color: white;
   text-decoration: none;
-}
+} */
 
 #lado_izquierdo {
   height: 1200px;
@@ -244,7 +244,7 @@ aside {
   width: 49%;
   vertical-align: top;
   box-sizing: border-box;
-  margin-left: ;
+  
 }
 .content-hombre {
   display: inline-block;
