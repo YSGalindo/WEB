@@ -3,30 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/styles (1).css" />
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/latest/normalize.css%22%3"
-    />
+    <link rel="stylesheet" href="css/styles_header.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
     <title>SPORT</title>
   </head>
 
   <body>
     <header>
-      <section class="resistencia"><img class="logo" src="Img/resistencia.png" alt="logo deportivo" />
-        <input class="buscar" type="text" placeholder="" required />
-        <button type="submit">Buscar</button>
+      <section class="contenedor_navar">
+        <section class="resistencia">
+        <img class="logo" src="Img/resistencia.png" alt="imagen de deportista">
+        <div class="contenedor_buscador"><input class="buscar" type="text" placeholder="" required />
+        <i class='bx bx-search-alt'></i></div>
+       </section>
         
-        </section><section class="indice"> <img class="envio" src="envio_gratis.jpg" alt="envio gratis" />
-        <nav>
+         <img class="envio" src="Img/envio_gratis.jpg" alt="envio gratis" />
+         <i class='bx bx-cart-download'></i>
+       
+        <nav class="menu_navegacion">
           <ul>
             <li class="inicio"><a href="#">Inicio de sesion</a></li>
             <li class="registro"><a href="#">Registro</a></li>
           </ul>
         </nav>
-      
       </section>
-    </header>
+      </header>
     <main>
       <strong><h1>Ropa Deportiva, Zapatos y Articulos Deportivos</h1></strong>
 
@@ -85,8 +89,7 @@
         </div>
       </footer>
     </main>
-
-    <aside class="lado_izquierdo">
+       <aside class="lado_izquierdo">
       <nav>
         <a href="" class="nav-link">Categorias</a>
         <a href="" class="nav-link">Camisetas</a>
@@ -97,7 +100,7 @@
       </nav>
     </aside>
 
-    <!-- <footer>
+     <footer>
       <div class="footer-container">
         <div class="footer-logo">
           <img src="logo.png" alt="Logo de la tienda" />
@@ -117,6 +120,6 @@
           </ul>
         </div>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>

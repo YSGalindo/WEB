@@ -6,7 +6,7 @@ body {
   overflow: scroll;
 }
 
-header {
+/*header {
   background-color: rgb(234, 122, 94);
   height: 12vh;
   width: 100%;
@@ -61,7 +61,7 @@ ul{
   padding: 20px;
   display: block;
   justify-content: space-between;
-}
+}*/
 
 main {
   position: relative;
