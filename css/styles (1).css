@@ -6,7 +6,7 @@ body {
   overflow: scroll;
 }
 
-header {
+/*header {
   background-color: rgb(234, 122, 94);
   height: 12vh;
   width: 100%;
@@ -24,7 +24,7 @@ header {
 .logo{
   height: 100%;
 }
- .indice{
+.indice{
   background-color: blue;
   height: 100%;
   width:50%;
@@ -61,19 +61,19 @@ ul{
   padding: 20px;
   display: block;
   justify-content: space-between;
-}
+}*/
 
 main {
-  position: relative;
+  /* position: relative; */
   width: 85%;
   max-width: 100%;
-  margin: auto;
-  padding: 0%;
-  text-align: center;
+  /* margin: auto; */
+  /* padding: 0%; */
+  /* text-align: center; */
   background-color: #fbeee6;
   float: right;
-  justify-content: space-between;
-  align-items: flex-start;
+  /* justify-content: space-between; */
+  /* align-items: flex-start; */
 }
 
 h1 {
@@ -88,12 +88,12 @@ h2 {
   border-bottom: 1px solid #ffbb5c;
 }
 
-footer {
+/* footer {
   background-color: blue;
   width: auto;
   height: 10vh;
-}
-.content-mujer {
+} */
+/* .content-mujer {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
@@ -145,7 +145,7 @@ main section nav ul li {
 main section nav ul li a {
   color: white;
   text-decoration: none;
-}
+} */
 
 #lado_izquierdo {
   height: 1200px;
@@ -169,13 +169,13 @@ main section nav ul li a {
   margin: auto;
   overflow: hidden;
 }
-footer {
+/* footer {
   background-color: #333;
   color: #fff;
   padding: 20px 0;
   text-align: center;
-}
-.footer-container {
+} */
+/* .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -225,7 +225,7 @@ footer {
 
 .footer-social a:hover {
   text-decoration: underline;
-}
+} */
 aside {
   width: 20%; /* Ancho del aside */
   margin-left: 20px; /* Margen izquierdo para separar del main */
@@ -244,7 +244,6 @@ aside {
   width: 49%;
   vertical-align: top;
   box-sizing: border-box;
-  margin-left: ;
 }
 .content-hombre {
   display: inline-block;
@@ -257,4 +256,3 @@ aside {
 .tamaño {
   width: 60%;
 }
-
