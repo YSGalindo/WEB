@@ -1,411 +1,410 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
-h1{ font-size: 3.5em;}
-h2{ font-size: 2.7em;}
-h3{ font-size: 2em;}
-p{ font-size: 1.25em;}
-ul{ list-style: none;}
-li{ font-size: 1.25em;}
-
-button{
-    font-size: 1.25em;
-    font-weight: bold;
-    padding: 10px 30px;
-    border-radius: 5px;
-    border: 2px solid rgba(0,0,0,0.3);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: white;
-    background-color: blueviolet;
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2.7em;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1.25em;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size: 1.25em;
 }
 
-button:hover{
-    background-color: rgb(101, 33, 165);
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: blueviolet;
 }
 
-.container{
-    max-width: 1400px;
-    margin: auto;
+button:hover {
+  background-color: rgb(101, 33, 165);
 }
 
-.color-acento{ color:blueviolet; }
-
-header{
-    background-color: rgb(245,245,245);
-    
+.container {
+  max-width: 1400px;
+  margin: auto;
 }
 
-header .logo{
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    color: blueviolet;
-    font-size: 1.6em;
+.color-acento {
+  color: blueviolet;
 }
 
-header .container{
+header {
+  background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: blueviolet;
+  font-size: 1.6em;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover {
+  color: blueviolet;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/Img/Deportes03.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1 {
+  color: white;
+}
+
+#hero button {
+  font-size: 1.75em;
+}
+
+#somos-proya .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#nuestros-deportes {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+}
+
+#nuestros-deportes .container {
+  padding: 150px 12px;
+}
+
+#nuestros-deportes h2 {
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#nuestros-deportes p {
+  display: none;
+}
+
+#nuestros-deportes .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+#caracteristicas .container {
+  text-align: center;
+  padding: 250px 12px;
+}
+
+#caracteristicas li {
+  margin: 16px 0px;
+  font-weight: bold;
+}
+
+#final {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  height: 80vh;
+}
+
+#final h2 {
+  font-size: 9vw;
+}
+
+#final button {
+  font-size: 5vw;
+}
+
+footer {
+  background-color: rgb(230, 230, 230);
+}
+
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100);
+}
+
+footer .container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (min-width: 850px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+
+  #hero h1 {
+    font-size: 5em;
+  }
+
+  #somos-proya .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #somos-proya .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
-}
-
-header a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-
-header a:hover{
-    color: blueviolet;
-}
-
-#hero{
-    display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
+  }
+
+  #somos-proya h2 {
+    margin-top: 0px;
+  }
+
+  #somos-proya .img-container {
+    background-image: url("/Img/fotofamilia.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 400px;
+  }
+
+  #nuestros-deportes .programas {
+    display: flex;
+    justify-content: center;
+  }
+
+  #nuestros-deportes p {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  #nuestros-deportes h2 {
+    font-size: 4em;
+  }
+
+  #nuestros-deportes h3 {
+    margin-top: 0;
+  }
+
+  #nuestros-deportes .carta {
+    padding: 50px;
+  }
+
+  .carta:first-child {
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("media/Deportes03.jpg");
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("/Img/Voleibol.jpg");
+  }
+
+  .carta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("/img/Futbol.jpg");
+  }
+
+  .carta:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("/img/gimnasio.jpg");
+  }
+
+  #caracteristicas {
+    background-image: url("/img/estante.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
+    background-size: 500px 400px;
+    background-position: calc(100vw - 500px) 120px;
+  }
 
-#hero h1{
-    color: white;
-}
+  #caracteristicas .container {
+    text-align: initial;
+  }
 
-#hero button{
-    font-size: 1.75em;
-}
+  #caracteristicas ul {
+    margin-left: 100px;
+  }
 
+  #final h2 {
+    font-size: 5em;
+  }
 
-#somos-proya .container{
-    text-align: center;
-    padding: 200px 12px;
-}
+  #final button {
+    font-size: 2em;
+  }
 
-#nuestros-deportes{
-    background-color: rgb(30,30,30);
-    color: white;
-    text-align: center;
-}
-
-#nuestros-deportes .container{
-    padding: 150px 12px;
-}
-
-#nuestros-deportes h2{
-    margin-top: 0;
-    font-size: 3.2em;
-}
-
-#nuestros-deportes p{
-    display: none;
-}
-
-#nuestros-deportes .carta{
-    background-position: center center;
-    background-size: cover;
-    padding: 50px 0px;
-    margin: 30px;
-    border-radius: 15px;
-}
-
-
-
-#caracteristicas .container{
-    text-align: center;
-    padding: 250px 12px;
-}
-
-#caracteristicas li{
-    margin: 16px 0px;
-    font-weight: bold;
-}
-
-#final{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(30,30,30);
-    color: white;
-    height: 80vh;
-}
-
-#final h2{
-    font-size: 9vw;
-}
-
-#final button{
-    font-size: 5vw;
-}
-
-footer{
-    background-color: rgb(230,230,230);
-}
-
-footer p{
-    margin: 0;
-    padding: 12px;
-    color: rgb(100,100,100);
-}
-
-footer .container{
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-@media (min-width: 850px){
-    header{
-        position: fixed;
-        width: 100%;
-    }
-
-    header .container{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-    }
-
-    #hero h1{
-        font-size: 5em;
-    }
-
-    #somos-proya .container{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    #somos-proya .texto{
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #somos-proya h2{
-        margin-top: 0px;
-    }
-
-    #somos-proya .img-container{
-        background-image: url("media/fotofamilia.jpg");
-        background-size: cover;
-        background-position: center center;
-        height: 300px;
-        width: 400px; 
-    }
-
-    #nuestros-deportes .programas{
-        display: flex;
-        justify-content: center;
-    }
-
-    #nuestros-deportes p{
-        display: block;
-        margin-bottom: 30px;
-    }
-
-    #nuestros-deportes h2{
-        font-size: 4em;
-    }
-
-    #nuestros-deportes h3{
-        margin-top: 0;
-    }
-
-    #nuestros-deportes .carta{
-        padding: 50px;
-    }
-
-    .carta:first-child{
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("media/Voleibol.jpg");
-
-    }
-
-    .carta:nth-child(2){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("media/Futbol.jpg");
-    }
-
-    .carta:nth-child(3){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("media/gimnasio.jpg");
-
-    }
-
-    #caracteristicas{
-        background-image: url("media/estante.jpg");
-        background-repeat: no-repeat;
-        background-size: 500px 400px;
-        background-position: calc(100vw - 500px) 120px;
-    }
-
-    #caracteristicas .container{
-        text-align: initial;
-    }
-
-    #caracteristicas ul{
-        margin-left: 100px;
-    }
-
-    #final h2{
-        font-size: 5em;
-    }
-
-    #final button{
-        font-size: 2em;
-    }
-
-    footer .container{
-        justify-content: flex-end;
-    }
+  footer .container {
+    justify-content: flex-end;
+  }
 }
 
 @media (min-width: 1200px) {
-    #caracteristicas{
-        background-position-x: calc(100vw - 800px);
-    }
+  #caracteristicas {
+    background-position-x: calc(100vw - 800px);
+  }
 }
 
 /*Estilos de la ventana emergente*/
 
 .modal {
-    background: rgba(0,0,0,.3);
-    position: fixed;
-    top: 0;
-    bottom: 0; 
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
 }
 
-.modal.active{
-    visibility: visible !important;
+.modal.active {
+  visibility: visible !important;
 }
 
 .popup {
-    background: #f8f8f8;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
-    font-family: 'Montserrat', sans-serif;
-    padding: 20px;
-    text-align: center;
-    width: 600px;
-
-
+  background: #f8f8f8;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  text-align: center;
+  width: 600px;
 }
 
 .popup .cerrar-popup {
-    font-size: 16px;
-    line-height: 16px;
-    display: block;
-    text-align: right;
-    color: #BBBBBB;
-    transition: .3s ease all;
-
+  font-size: 16px;
+  line-height: 16px;
+  display: block;
+  text-align: right;
+  color: #bbbbbb;
+  transition: 0.3s ease all;
 }
 
 .popup .cerrar-popup:hover {
-    color: #000;
-
+  color: #000;
 }
 
 .popup h3 {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    /*opacity: 0;*/
-
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  /*opacity: 0;*/
 }
 
 .popup h4 {
-    font-size: 26px;
-    font-weight: 400;
-    margin-bottom: 40px;
-    /*opacity: 0;*/
-    
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  /*opacity: 0;*/
 }
 
-
 .popup form .contenedor-inputs input {
-    width: 100%;
-    margin-bottom: 20px;
-    height: 52px;
-    line-height: 52px;
-    font-size: 18px;
-    text-align: center;
-    border: 1px solid #BBBBBB;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 52px;
+  line-height: 52px;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #bbbbbb;
 }
 
 .popup form btn-submit {
-    padding: 0 20px;
-    height: 40px;
-    line-height: 40px;
-    border: none;
-    color: white;
-    background: #5E7DE3;
-    border-radius: 3px;
-    font-family: 'Montserrat' sans-serif;
-    font-size: 16px;
-    cursor: pointer;
-    transition: .3s case ease all;
-
-
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  color: white;
+  background: #5e7de3;
+  border-radius: 3px;
+  font-family: "Montserrat" sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s case ease all;
 }
 
-.popup form btn-submit:hover{
-    background: rgba(94, 125, 227, .9);
+.popup form btn-submit:hover {
+  background: rgba(94, 125, 227, 0.9);
 }
