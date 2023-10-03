@@ -1,0 +1,84 @@
+
+
+header{
+    height: 10vh;
+    width: 100%;
+    /*display: inline-block;*/
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    display:flex
+
+}
+header i{
+    font-size: 30px;
+    color: white;   
+
+}
+.contenedor_navar{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(234, 122, 94);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.logo{
+    height: 10vh;
+}
+.buscar{
+    border-radius: 10px;
+}
+.resistencia{
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;   
+   
+   
+}
+.resistencia i{
+    font-size: 30px;
+    color: white;
+}
+.contenedor_buscador{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+}
+.menu_navegacion ul {
+   list-style: none;
+   display: flex;
+   padding: 20px;
+   gap: 20px;
+    
+}
+
+.menu_navegacion li a{
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+ /* width: 20%; */
+}
+.menu_navegacion li a:hover{
+    background-color: orange;
+}
+.envio {
+    height: 100%;
+    width: 35%;
+    margin-left: 0;
+
+}
+
+
+
+
