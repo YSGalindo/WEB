@@ -8,27 +8,28 @@ body {
 
 main {
   /* position: relative; */
-  width: 85%;
+  width: 68%;
   max-width: 100%;
   /* margin: auto; */
   /* padding: 0%; */
   /* text-align: center; */
-  background-color: #fbeee6;
+  background-color: white;
   float: right;
   /* justify-content: space-between; */
   /* align-items: flex-start; */
 }
 
-h1 {
+/* h1 {
   color: #c63d2f;
   font-size: 40px;
   text-align: top;
-}
+} */
 
 h2 {
   font-size: 30px;
-  color: #ff9b50;
-  border-bottom: 1px solid #ffbb5c;
+  color: blueviolet;
+  border-bottom: 1px solid blueviolet;
+  ;
 }
 
 /* footer {
@@ -90,14 +91,19 @@ main section nav ul li a {
   text-decoration: none;
 } */
 
-#lado_izquierdo {
+/* .lado_izquierdo {
   height: 1200px;
   width: 15%;
   background-color: grey;
   float: left;
+} */
+.lado_izquierdo nav {
+  margin-top: 28%;
 }
+
 .lado_izquierdo nav a {
-  background-color: grey;
+  background-color:   rgb(160, 126, 195);
+  ;
   color: white;
   padding: 50px;
   display: block;
@@ -107,7 +113,7 @@ main section nav ul li a {
 }
 
 .lado_izquierdo nav a:hover {
-  background-color: white;
+  background-color: rgb(164, 89, 234);
   color: black;
   margin: auto;
   overflow: hidden;
@@ -170,32 +176,15 @@ main section nav ul li a {
   text-decoration: underline;
 } */
 aside {
-  width: 20%; /* Ancho del aside */
+  
+  width: 25%; /* Ancho del aside */
   margin-left: 20px; /* Margen izquierdo para separar del main */
   background-color: #f1f1f1;
   padding: 10px;
+  
 }
 .nav-link {
   display: block;
   margin-bottom: 10px;
 }
 
-.content-mujer {
-  display: inline-block;
-  color: white;
-  position: relative;
-  width: 49%;
-  vertical-align: top;
-  box-sizing: border-box;
-}
-.content-hombre {
-  display: inline-block;
-  position: relative;
-  width: 49%;
-  vertical-align: top;
-  box-sizing: border-box;
-  margin-top: 50px;
-}
-.tamaño {
-  width: 60%;
-}
