@@ -1,69 +1,63 @@
-.main-section {
-    width: 100%;
-    height: 100%;
+.main section {
+    background-color: white;
+}
+h2 {
+    font-size: 30px;
+    color: rgb(146, 3, 194);
+    text-align: center;
+    padding: 250px 0px;
+    -webkit-text-stroke: 1.5px rgb(251, 249, 251);
+}
+
+.div-main {
+    display: grid;
+    grid-template-columns: 20% 78%;
 }
 
 .titulo {
-    color: blueviolet;
-    font-size: 40px;
+    color: rgb(29, 6, 52);
+    font-size: 50px;
     text-align: center;
     margin-top: 10%;
 }
 
-.center-rigth ul a {
-    text-decoration: none;
-    font-size: 15px;
-    color: white;
-}
-
-.center-rigth ul a:hover {
-    background-color: rgb(218, 187, 246);
-}
-
 .flex-conteiner {
-    flex-direction: row;
-    display: flex;
-
-    justify-content: center;
-    align-items:center;
-
-    /* flex-wrap: wrap;
-    gap: 8px; */
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
 .container-1 {
-    background-image: url(/Img/mujer.png);
-    font-size: 100%;
-    width: 500px;
-    height: 350px;
+    background-image: url(/Img/Mujer.png);
     background-size: cover;
     background-repeat: no-repeat;
-    
+    grid-area: 1 / 4 / 3 / 6;
 }
-
+ 
 .container-2 {
     background-image: url(/Img/hombre.png);
     font-size: 100%;
-    width: 500px;
-    height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
+    grid-area: 1 / 1 / 4 / 4;
 }
 
 .container-3 {
     background-image: url(/Img/infantil.jpg);
     font-size: 100%;
-    width: 500px;
-    height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
+    grid-area: 3 / 4 / 6 / 6; 
 }
 
 .container-4 {
     background-image: url(/Img/deportes.png);
     font-size: 100%;
-    width: 500px;
-    height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
+    grid-area: 4 / 1 / 6 / 4; 
 }
