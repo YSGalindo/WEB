@@ -79,6 +79,104 @@
           <h2>Articulos Deportivos</h2>
         </div>
       </section>
+      <h1 class="titulo">Galería</h1>
+      <section class="contenido">
+        
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://i.pinimg.com/originals/8b/57/4e/8b574e2274808dfd1797ee83eee38c4e.jpg" alt="Camiseta1">
+                    </div>
+                    <p class="descripcion">Camiseta hombre 3 colores</p>
+                    <span class="precio">$ 30.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://www.savifoot.com/568-medium_default/birmingham-jersey.jpg" alt="Camiseta2">
+                    </div>
+                    <p class="descripcion" id>Camiseta Azul Oscuro </p>
+                    <span class="precio">$ 20.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://i.pinimg.com/originals/e1/3d/f6/e13df68a2c30cd4ddb621a98a3aebaf4.jpg" alt="Camiseta3">
+                    </div>
+                    <p class="descripcion">Camiseta Roja
+                    </p>
+                    <span class="precio">$ 25.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://th.bing.com/th/id/R.55a677132d0c8ea23f4202a3b8e232c7?rik=%2fr1sW99nzCr%2b5Q&pid=ImgRaw&r=0" alt="Camiseta4">
+                    </div>
+                    <p class="descripcion">Top deportivo mujer Azul</p>
+                    <span class="precio">$ 19.000</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://th.bing.com/th/id/OIP.OnWJ9uDQjYkjAHkz9nIzEQHaJ4?pid=ImgDet&w=800&h=1067&rs=1" alt="Camiseta5">
+                    </div>
+                    <p class="descripcion">Top femenino Rosado Microfibra</p>
+                    <span class="precio">$ 30.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://www.ofertacamisetas.com/wp-content/uploads/2019/10/camisetas-infantiles-de-deportes-depor-ni%C3%B1a.jpg" alt="Camiseta6">
+                    </div>
+                    <p class="descripcion">Camiseta niñes Rosada</p>
+                    <span class="precio">$ 10.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://i.pinimg.com/736x/b3/d9/2f/b3d92f2c5eeed37dca1613a102b7a412.jpg" alt="Camista7">
+                    </div>
+                    <p class="descripcion"> Camiseta microfribra Niña Roja</p>
+                    <span class="precio">$ 11.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://th.bing.com/th/id/OIP.vUPcftQy1WBD-yiiahoSuwEsEs?pid=ImgDet&rs=1" alt="Camiseta8">
+                    </div>
+                    <p class="descripcion">Camiaeta baseball niño Roja</p>
+                    <span class="precio">$ 9.800</span>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">NIKE MODEL 1</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 130</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">SIZE</label>
+                        <select name="" id="">
+                            <option value="">40</option>
+                            <option value="">42</option>
+                            <option value="">44</option>
+                            <option value="">46</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="javascript/galeria.js"></script>
+
+ 
+
     </main>
   </div>
 
