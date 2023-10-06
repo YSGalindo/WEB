@@ -3,7 +3,7 @@
 }
 h2 {
     font-size: 30px;
-    color: rgb(146, 3, 194);
+    color: #9203c2;
     text-align: center;
     padding: 250px 0px;
     -webkit-text-stroke: 1.5px rgb(251, 249, 251);
@@ -21,22 +21,24 @@ h2 {
     margin-top: 10%;
 }
 
-.flex-conteiner {
-    height: 40%;
+ .flex-conteiner {
+    height: 80%;
     width: 100%;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
+    grid-row-gap: 0px;  */
+}   
 
-.container-1 {
+/* .container-1 {
     background-image: url(/Img/Mujer.png);
     font-size: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     grid-area: 1 / 4 / 3 / 6;
+    
+    
 }
  
 .container-2 {
@@ -61,7 +63,7 @@ h2 {
     background-size: contain;
     background-repeat: no-repeat;
     grid-area: 4 / 1 / 6 / 4; 
-}
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
  *{
