@@ -10,7 +10,54 @@ header{
 }
 header i{
     font-size: 30px;
-    color: white;   
+    color: black;   
+
+}
+
+.carrito{
+    display: flex;
+    align-items: center;
+    padding: 20px 36px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 20px 40px rgb(187, 81, 237);
+    cursor:pointer;
+    user-select: none;
+}
+.carrito .icon{
+    font-size: 20px;
+    color: aqua;
+    margin-right: 5px;
+    display: none;
+
+}
+.carrito .checked .icon{
+    display: flex;
+
+}
+.icon .spinner .spin{
+    animation: spin 1.0s ease-in-out infinite;
+}
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.icon.check{
+    display: inline-flex;
+    height: 28px;
+    width: 28px;
+    font-size: 17px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+}
+.carrito .btn-tex {
+    font-size: 32px;
+    font-weight: 400px;
+    color: aqua;
+
 
 }
 .contenedor_navar{

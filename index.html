@@ -15,6 +15,7 @@
   <script src="javascript/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.min.js"></script>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <title>SPORT</title>
 </head>
 
@@ -23,14 +24,18 @@
     <section class="contenedor_navar">
       <section class="resistencia">
         <img class="logo" src="Img/resistencia.png" alt="imagen de deportista" />
-        <div class="contenedor_buscador">
+        <div class="contenedor_buscador"> 
+         <div onclick="buscar()">
           <input class="buscar" id="buscar" type="text" placeholder="" required />
-         <div onclick="buscar()"><button><i class="bx bx-search-alt"></i></button></div>
+          <button><i class="bx bx-search-alt"></i></button></div>
         </div>
       </section>
 
       <img class="envio" src="Img/envio_gratis.jpg" alt="envio gratis" />
-      <i class="bx bx-cart-download"></i>
+      <div class="carrito">
+        <i class="fa-solid fa-circle-notch icon spinner"></i>
+        <spam class="btn-tex" user-selcect="none"></spam>
+      </div>
 
       <nav class="menu_navegacion">
         <ul>
