@@ -17,7 +17,7 @@ let  data = [
  spinIcon = document.querySelector(".spiner")
  btnTex = document.querySelector(".btn-text")
 
-               btn.addEventListener("click" , () => {
+               btn.addEventListener("click") , () => {
             btn.style.cursor = "wait";
         btn.classList.add("checked");
         spinIcon.classList.add("spin");
@@ -33,4 +33,4 @@ let  data = [
 
 
         }, 3500)
-        };
+        }

@@ -22,7 +22,7 @@ body {
 }
 
 .lado_izquierdo nav a:hover {
-  background-color: rgb(164, 89, 234);
+  background-color: #a459ea;
   color: black;
   margin: auto;
   overflow: hidden;
